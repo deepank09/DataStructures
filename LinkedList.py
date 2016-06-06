@@ -65,6 +65,12 @@ class UnorderedList:
         else:
             previous.setNext(current.getNext())
 
+    def printList(self):
+        current = self.head
+        while current != None:
+            print(current.getData(), end=' ')
+            current = current.getNext()
+
 if __name__ == '__main__':
     mylist = UnorderedList()
 
@@ -90,3 +96,7 @@ if __name__ == '__main__':
     mylist.remove(31)
     print(mylist.size())
     print(mylist.search(93))
+
+
+
+
